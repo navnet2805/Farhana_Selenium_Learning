@@ -1,5 +1,6 @@
 package TestNG_01;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Test_01 {
