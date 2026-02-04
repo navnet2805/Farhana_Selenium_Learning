@@ -42,6 +42,22 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- Source: https://mvnrepository.com/artifact/org.apache.logging.Log4j_package.log4j/Log4j_package.log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.Log4j_package.log4j</groupId>
+            <artifactId>Log4j_package.log4j-core</artifactId>
+            <version>2.25.3</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/org.apache.logging.Log4j_package.log4j/Log4j_package.log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.Log4j_package.log4j</groupId>
+            <artifactId>Log4j_package.log4j-api</artifactId>
+            <version>2.25.3</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
     <properties>

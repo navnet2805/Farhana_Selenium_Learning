@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- Console output -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File output -->
+        <File name="FileLogger" fileName="logs/selenium.log" append="true">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </File>
+
+    </Appenders>
+
+    <!-- trace -> debug -> info -> warn -> error -> fatal  -->
+
+    <!-- trace -> very detailed information -->
+    <!-- debug -> used for developers -->
+    <!-- info -> simple information/test steps-->
+    <!-- warn -> unexpected popup/tab has closed -->
+    <!-- error -> test step failed-->
+    <!-- fatal -> system hang/crash/shutdown -->
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
